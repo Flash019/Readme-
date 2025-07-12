@@ -1,11 +1,11 @@
-# Project Name 
+# StackIt
 
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=1A237E&center=true&vCenter=true&width=600&lines=Welcome+to+Project+Name!;A+Minimal+Q%26A+Forum+Platform;Built+with+Modern+Technologies;Let's+Build+Something+Amazing!" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&pause=1000&color=1A237E&center=true&vCenter=true&width=600&lines=Welcome+to+StackIt!;A+Minimal+Q%26A+Forum+Platform;Built+with+Modern+Technologies;Let's+Build+Something+Amazing!" alt="Typing SVG" />
 </div>
 
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=Project%20Name&fontSize=40&fontAlignY=35&animation=twinkling&fontColor=1A237E" />
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&height=200&section=header&text=StackIt&fontSize=40&fontAlignY=35&animation=twinkling&fontColor=1A237E" />
 </div>
 
 ## 📋 Problem Statement 2 
@@ -34,15 +34,10 @@ community.
   </a>
 </div>
 
-> 🎯 Click to explore the live experience of Project NAme user-friendly interface and advanced features.
+> 🎯 Click to explore the live experience of StackIt user-friendly interface and advanced features.
 
 ---
 
-## 🌐 Live Site
-
-[🔗 Try Project Name Now](https://your-deployed-site.com)
-
----
 
 ## 👥 Team Members
 
@@ -117,16 +112,31 @@ community.
 
 ```bash
 # Clone the repository
-git clone https://github.com/your-username/taskflow-pro.git
+git clone https://github.com/Sov-ereign/StackIt-A-Minimal-Q-A-Forum-Platform-.git
 
 # Navigate to the project directory
-cd taskflow-pro
+cd StackIt-A-Minimal-Q-A-Forum-Platform-
 
-# Install dependencies
+# Install server (backend) dependencies
+cd server
 npm install
 
+# (Optional) Set up environment variables
+cp .env.example .env
+# Edit the .env file with your MongoDB URI and JWT secret
 
-# Start the development server
+# Start the backend server
+npm start
+# Or if using nodemon
+# npx nodemon index.js
+
+# Open a new terminal and go back to root
+cd ../client
+
+# Install client (frontend) dependencies
+npm install
+
+# Start the React development server
 npm run dev
 
 
